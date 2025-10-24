@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.stacs.cs5031.p3.server.service.RoomServiceTest
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.040 s -- in com.stacs.cs5031.p3.server.service.RoomServiceTest

@@ -1,0 +1,54 @@
+-------------------------------------------------------------------------------
+Test set: com.stacs.cs5031.p3.server.service.BookingServiceTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.043 s <<< FAILURE! -- in com.stacs.cs5031.p3.server.service.BookingServiceTest
+com.stacs.cs5031.p3.server.service.BookingServiceTest.testDeleteBooking_NotFound -- Time elapsed: 0.033 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected com.stacs.cs5031.p3.server.exception.BookingNotFoundException to be thrown, but nothing was thrown.
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3128)
+	at com.stacs.cs5031.p3.server.service.BookingServiceTest.testDeleteBooking_NotFound(BookingServiceTest.java:108)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+com.stacs.cs5031.p3.server.service.BookingServiceTest.testGetBookingById_Found -- Time elapsed: 0.001 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:183)
+	at com.stacs.cs5031.p3.server.service.BookingServiceTest.testGetBookingById_Found(BookingServiceTest.java:75)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+com.stacs.cs5031.p3.server.service.BookingServiceTest.testGetAllBookings -- Time elapsed: 0 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <2> but was: <0>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
+	at com.stacs.cs5031.p3.server.service.BookingServiceTest.testGetAllBookings(BookingServiceTest.java:58)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+com.stacs.cs5031.p3.server.service.BookingServiceTest.testDeleteBooking_Success -- Time elapsed: 0.005 s <<< FAILURE!
+Wanted but not invoked:
+bookingRepository.delete(
+    Booking [id=0, eventName=Event, room=Room, startTime=Fri Apr 18 14:12:35 BST 2025, duration=45 mins, organiser=johndoe, attendees=0]
+);
+-> at com.stacs.cs5031.p3.server.service.BookingServiceTest.testDeleteBooking_Success(BookingServiceTest.java:100)
+Actually, there were zero interactions with this mock.
+
+	at com.stacs.cs5031.p3.server.service.BookingServiceTest.testDeleteBooking_Success(BookingServiceTest.java:100)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.stacs.cs5031.p3.server.repository.RoomRepositoryTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 s -- in com.stacs.cs5031.p3.server.repository.RoomRepositoryTest
